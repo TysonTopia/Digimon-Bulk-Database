@@ -15,16 +15,23 @@
         Card ID
     </th>
     <th>
+        Name
+    </th>
+    <th>
         Location
     </th>
     <th>
         Sleeved
     </th>
+    
 </tr>
   <% @bulk_controller.each do |card| %>
   <tr>
     <td>
       <%= card.card_id %>
+    </td>
+    <td>
+      <%= card.card_information.card_name %>
     </td>
     <td>
         <%= card.location%> 
@@ -35,5 +42,6 @@
     </tr>
   <% end %>
 
-<table>
+</table>
+
 </body>
