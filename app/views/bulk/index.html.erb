@@ -22,8 +22,7 @@
     </th>
     <th>
         Sleeved
-    </th>
-    
+    </th>  
 </tr>
   <% @bulk_controller.each do |card| %>
   <tr>
@@ -41,7 +40,6 @@
     </td>
     </tr>
   <% end %>
-
 </table>
-
+<%= link_to "Add bulk", "/bulk/new" %>
 </body>
