@@ -1,0 +1,35 @@
+<head>
+    <%= stylesheet_link_tag "bulk" %>
+</head>
+<body>
+
+<h1>Bulk</h1>
+
+<table border=1 frame=asides rules=rows>
+<tr>
+    <th>
+        Card ID
+    </th>
+    <th>
+        Location
+    </th>
+    <th>
+        Sleeved
+    </th>
+</tr>
+  <% @bulk_controller.each do |card| %>
+  <tr>
+    <td>
+      <%= card.card_id %>
+    </td>
+    <td>
+        <%= card.location%> 
+    </td>
+    <td>
+        <%= card.sleeved%>
+    </td>
+    </tr>
+  <% end %>
+
+<table>
+</body>
